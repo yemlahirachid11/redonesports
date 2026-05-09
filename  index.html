@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title id="pg-title">RedoneSports – Elite Football Player Management & Brand Agency</title>
+<meta id="pg-desc" name="description" content="RedoneSports is a premier football player management and brand agency. We represent professional soccer players, negotiate contracts, build athlete brands, and secure global sponsorship deals."/>
+<meta name="keywords" content="football player management agency, soccer agent, athlete branding, contract negotiation, player sponsorship, sports management, football transfer, player representation, soccer brand agency"/>
+<meta name="author" content="RedoneSports"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://www.redonesports.com/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="RedoneSports – Elite Football Player Management & Brand Agency"/>
+<meta property="og:description" content="We Don't Just Represent Talent. We Build Legacy. World-class football management and branding agency serving players across 40+ countries."/>
+<meta property="og:url" content="https://www.redonesports.com/"/>
+<meta property="twitter:card" content="summary_large_image"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SportsOrganization","name":"RedoneSports","description":"Elite football player management and brand agency representing professional soccer players globally","url":"https://www.redonesports.com","contactPoint":{"@type":"ContactPoint","email":"info@redonesports.com","contactType":"Customer Service","availableLanguage":["English","French","Arabic"]},"areaServed":"Worldwide","serviceType":["Football Player Management","Athlete Brand Building","Contract Negotiation","Transfer Management","Sponsorship Deals"]}</script>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700;900&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--red:#e8000a;--red2:#a30007;--k:#080808;--k2:#111;--k3:#1a1a1a;--k4:#222;--w:#f4f4f4;--g:#777;--g2:#aaa;--H:'Bebas Neue',sans-serif;--B:'Barlow',sans-serif}
+html{scroll-behavior:smooth}
+body{background:var(--k);color:var(--w);font-family:var(--B);overflow-x:hidden}
+::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:var(--k)}::-webkit-scrollbar-thumb{background:var(--red);border-radius:2px}
+a{text-decoration:none;color:inherit}
+
+/* INTRO */
+#intro{position:fixed;inset:0;z-index:9999;background:var(--k);display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity 1s,visibility 1s}
+#intro.out{opacity:0;visibility:hidden;pointer-events:none}
+.i-pre{font-size:.7rem;letter-spacing:6px;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:28px;opacity:0;animation:fU .6s ease .2s forwards}
+.i-logo{font-family:var(--H);font-size:clamp(4rem,12vw,10rem);letter-spacing:6px;color:var(--w);text-align:center;opacity:0;animation:fU .8s ease .5s forwards}
+.i-logo em{color:var(--red);font-style:normal}
+.i-bar{width:0;height:2px;background:var(--red);margin:30px 0;animation:bG .7s ease 1.1s forwards}
+.i-line{font-weight:300;font-size:clamp(.95rem,2vw,1.3rem);letter-spacing:3px;color:var(--w);text-align:center;max-width:680px;padding:0 20px;opacity:0;animation:fU .8s ease 1.5s forwards}
+.i-line strong{color:var(--red);font-weight:700}
+.i-skip{position:absolute;bottom:36px;right:36px;font-size:.65rem;letter-spacing:3px;text-transform:uppercase;color:var(--g);border-bottom:1px solid var(--g);padding-bottom:2px;cursor:pointer;transition:color .2s;opacity:0;animation:fU .5s ease 2.2s forwards}
+.i-skip:hover{color:var(--red);border-color:var(--red)}
+@keyframes fU{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes bG{to{width:180px}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+
+/* NAV */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:500;
+  background:transparent;
+  transition:background .4s,box-shadow .4s;
+}
+nav.solid{background:rgba(8,8,8,.96);box-shadow:0 2px 30px rgba(0,0,0,.8)}
+.nav-inner{
+  display:grid;
+  grid-template-columns:1fr auto 1fr;
+  align-items:center;
+  height:68px;padding:0 44px;
+}
+.logo{
+  font-family:var(--H);font-size:1.6rem;letter-spacing:4px;
+  cursor:pointer;display:flex;align-items:center;gap:10px;
+  white-space:nowrap;justify-self:start;
+}
+.logo-dot{width:10px;height:10px;border-radius:50%;background:var(--red);flex-shrink:0}
+.logo em{color:var(--red);font-style:normal}
+.nav-links{
+  display:flex;list-style:none;align-items:center;
+  gap:2px;justify-self:center;
+  background:rgba(255,255,255,.07);
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:50px;
+  padding:6px 8px;
+  backdrop-filter:blur(10px);
+}
+.nav-links a{
+  font-weight:600;font-size:.72rem;letter-spacing:1.5px;
+  color:rgba(255,255,255,.7);
+  transition:color .2s,background .2s;cursor:pointer;
+  display:flex;align-items:center;
+  padding:8px 18px;border-radius:40px;
+  white-space:nowrap;
+}
+.nav-links a:hover{color:var(--w);background:rgba(255,255,255,.1)}
+.nav-links a.act{color:var(--w);background:rgba(255,255,255,.12);font-weight:700}
+.nav-right{display:flex;align-items:center;justify-self:end}
+.nav-cta-btn{
+  background:var(--red);color:var(--w);
+  padding:11px 26px;border-radius:50px;
+  font-weight:700;font-size:.78rem;letter-spacing:1px;
+  cursor:pointer;border:none;
+  transition:background .2s,transform .15s;
+  white-space:nowrap;
+}
+.nav-cta-btn:hover{background:var(--red2);transform:scale(1.04)}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer;z-index:600}
+.burger span{width:24px;height:2px;background:var(--w);display:block;transition:.3s}
+.burger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+.mob{display:none;position:fixed;inset:0;background:rgba(8,8,8,.98);z-index:490;flex-direction:column;align-items:center;justify-content:center;gap:32px}
+.mob.open{display:flex}
+.mob a{font-family:var(--H);font-size:2.2rem;letter-spacing:3px;cursor:pointer;transition:color .2s}
+.mob a:hover{color:var(--red)}
+
+/* PAGES */
+.page{display:none;min-height:100vh;padding-top:64px}
+.page.show{display:block}
+
+/* HERO */
+.hero{position:relative;min-height:calc(100vh - 70px);display:flex;align-items:center;overflow:hidden;background:var(--k)}
+.h-glow{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 60% 70% at 80% 50%,rgba(232,0,10,.13) 0%,transparent 65%)}
+.h-grid{position:absolute;inset:0;opacity:.03;background-image:linear-gradient(rgba(255,255,255,1) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,1) 1px,transparent 1px);background-size:65px 65px}
+.h-slash{position:absolute;right:-6%;top:0;bottom:0;width:54%;background:var(--k2);clip-path:polygon(15% 0%,100% 0%,100% 100%,0% 100%)}
+.h-slash::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 80% at 60% 45%,rgba(232,0,10,.07) 0%,transparent 70%)}
+.h-content{position:relative;z-index:2;padding:80px 60px;max-width:650px}
+.badge{display:inline-flex;align-items:center;gap:9px;background:rgba(232,0,10,.1);border:1px solid rgba(232,0,10,.3);padding:6px 16px;margin-bottom:26px;font-size:.65rem;font-weight:700;letter-spacing:3.5px;text-transform:uppercase;color:var(--red)}
+.badge::before{content:'●';font-size:.4rem;animation:pulse 1.8s infinite}
+.h-title{font-family:var(--H);font-size:clamp(4.5rem,9vw,9.5rem);line-height:.9;letter-spacing:2px;margin-bottom:22px}
+.h-title .r{color:var(--red)}
+.h-sub{font-size:1.05rem;font-weight:300;color:var(--g2);line-height:1.78;max-width:450px;margin-bottom:40px}
+.cta-row{display:flex;gap:18px;flex-wrap:wrap;align-items:center}
+.btn-r{background:var(--red);color:var(--w);padding:15px 36px;font-family:var(--H);font-size:1.05rem;letter-spacing:2px;clip-path:polygon(12px 0%,100% 0%,calc(100% - 12px) 100%,0% 100%);transition:background .25s,transform .2s;display:inline-block;cursor:pointer;border:none}
+.btn-r:hover{background:var(--red2);transform:translateY(-2px)}
+.btn-ghost{color:var(--w);font-weight:700;font-size:.78rem;letter-spacing:2px;text-transform:uppercase;border-bottom:2px solid var(--red);padding-bottom:3px;transition:color .2s;cursor:pointer;background:none;border-top:none;border-left:none;border-right:none}
+.btn-ghost:hover{color:var(--red)}
+
+/* SECTIONS */
+.sec{padding:90px 60px}
+.con{max-width:1200px;margin:0 auto}
+.stag{font-size:.65rem;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--red);display:block;margin-bottom:10px}
+.stitle{font-family:var(--H);font-size:clamp(2.8rem,5vw,5.5rem);line-height:.92;letter-spacing:1px;margin-bottom:16px}
+.ssub{font-size:1rem;color:#999;font-weight:300;max-width:500px;line-height:1.8}
+.div{width:52px;height:3px;background:var(--red);margin:20px 0}
+
+/* SERVICE CARDS */
+.svcs{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:56px}
+.svc{background:var(--k2);padding:44px 34px;position:relative;overflow:hidden;transition:background .3s;cursor:pointer}
+.svc:hover{background:var(--k3)}
+.svc::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.svc:hover::after{transform:scaleX(1)}
+.svc-ico{width:48px;height:48px;background:rgba(232,0,10,.1);display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:22px;clip-path:polygon(10px 0%,100% 0%,calc(100% - 10px) 100%,0% 100%)}
+.svc-n{position:absolute;top:16px;right:20px;font-family:var(--H);font-size:4.5rem;color:rgba(255,255,255,.03);line-height:1}
+.svc h3{font-family:var(--H);font-size:1.65rem;letter-spacing:1px;margin-bottom:12px}
+.svc p{font-size:.88rem;color:#888;line-height:1.8}
+.svc-link{display:inline-block;margin-top:16px;font-size:.68rem;letter-spacing:2px;text-transform:uppercase;color:var(--red);border-bottom:1px solid rgba(232,0,10,.3);padding-bottom:2px}
+
+/* WHY GRID */
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.why-cards{display:flex;flex-direction:column;gap:16px}
+.wcard{background:var(--k2);padding:28px 30px;border-left:3px solid var(--red);display:flex;align-items:flex-start;gap:18px}
+.wcard-ico{width:40px;height:40px;background:rgba(232,0,10,.1);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+.wcard h4{font-family:var(--H);font-size:1.3rem;letter-spacing:1px;margin-bottom:6px}
+.wcard p{font-size:.85rem;color:#888;line-height:1.7}
+
+/* TESTI */
+.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:56px}
+.testi{background:var(--k2);padding:36px 30px;position:relative}
+.testi::before{content:'"';font-family:var(--H);font-size:6rem;color:rgba(232,0,10,.15);position:absolute;top:10px;left:20px;line-height:1}
+.testi p{font-size:.92rem;line-height:1.8;color:var(--g2);margin-bottom:24px;position:relative;z-index:1}
+.t-author{display:flex;align-items:center;gap:14px}
+.t-av{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--red),var(--red2));display:flex;align-items:center;justify-content:center;font-family:var(--H);font-size:1.1rem}
+.t-name{font-weight:700;font-size:.9rem}
+.t-role{font-size:.75rem;color:var(--g);margin-top:2px}
+
+/* CTA BAND */
+.cband{background:var(--red);padding:80px 60px;text-align:center;position:relative;overflow:hidden}
+.cband::before{content:'REDONE';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-family:var(--H);font-size:20vw;color:rgba(0,0,0,.1);white-space:nowrap;pointer-events:none}
+.cband h2{font-family:var(--H);font-size:clamp(2.5rem,5vw,5rem);letter-spacing:2px;margin-bottom:14px;position:relative}
+.cband p{font-size:1.05rem;font-weight:300;opacity:.85;margin-bottom:36px;position:relative}
+.btn-w{background:var(--w);color:var(--red);padding:15px 40px;font-family:var(--H);font-size:1.1rem;letter-spacing:2px;clip-path:polygon(12px 0%,100% 0%,calc(100% - 12px) 100%,0% 100%);transition:background .25s,transform .2s;display:inline-block;cursor:pointer;border:none;position:relative}
+.btn-w:hover{background:#ddd;transform:translateY(-2px)}
+
+/* PAGE HERO */
+.phero{padding:100px 60px 80px;position:relative;overflow:hidden;border-bottom:1px solid rgba(232,0,10,.15)}
+.phero::after{content:'';position:absolute;right:-80px;top:-80px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(232,0,10,.07) 0%,transparent 70%);pointer-events:none}
+.phi{max-width:1200px;margin:0 auto;position:relative;z-index:1}
+.phero h1{font-family:var(--H);font-size:clamp(3.5rem,8vw,8rem);line-height:.9;letter-spacing:2px;margin-bottom:20px}
+.phero h1 span{color:var(--red)}
+.phero p{font-size:1.05rem;font-weight:300;color:var(--g2);max-width:620px;line-height:1.8}
+
+/* SEO ARTICLE */
+.art-wrap{max-width:960px;margin:0 auto}
+.art-cat{display:inline-block;background:var(--red);font-size:.65rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;padding:5px 14px;margin-bottom:20px}
+.art-title{font-family:var(--H);font-size:clamp(2.2rem,4.5vw,4.5rem);line-height:.95;letter-spacing:1px;margin-bottom:20px}
+.art-title span{color:var(--red)}
+.art-deck{font-size:1.1rem;font-weight:300;color:var(--g2);line-height:1.8;border-left:3px solid var(--red);padding-left:20px;margin-bottom:28px}
+.art-meta{display:flex;gap:24px;flex-wrap:wrap;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,.07);margin-bottom:48px}
+.art-meta span{font-size:.68rem;letter-spacing:2px;text-transform:uppercase;color:var(--g)}
+.art-meta strong{color:var(--red)}
+.art-body h2{font-family:var(--H);font-size:clamp(1.8rem,3vw,2.8rem);letter-spacing:1px;margin:52px 0 16px;color:var(--w)}
+.art-body h2:first-child{margin-top:0}
+.art-body h3{font-family:var(--H);font-size:1.5rem;letter-spacing:1px;margin:32px 0 12px;color:var(--w)}
+.art-body p{font-size:1rem;color:#aaa;line-height:1.95;margin-bottom:18px;font-weight:300}
+.art-body p strong{color:var(--w);font-weight:700}
+.art-body ul{list-style:none;margin:16px 0 24px}
+.art-body ul li{font-size:.95rem;color:#aaa;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.05);display:flex;align-items:flex-start;gap:12px;line-height:1.7}
+.art-body ul li::before{content:'→';color:var(--red);flex-shrink:0;margin-top:2px}
+.art-quote{background:var(--k2);border-left:4px solid var(--red);padding:28px 32px;margin:36px 0;font-size:1.1rem;font-weight:300;color:var(--w);line-height:1.75;font-style:italic}
+.art-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin:44px 0}
+.af{background:var(--k2);padding:28px 24px;text-align:center}
+.af-n{font-family:var(--H);font-size:2.8rem;color:var(--red);line-height:1}
+.af-l{font-size:.68rem;letter-spacing:2px;text-transform:uppercase;color:var(--g);margin-top:6px}
+.art-tag{display:inline-block;font-size:.62rem;letter-spacing:2px;text-transform:uppercase;color:var(--red);border:1px solid rgba(232,0,10,.3);padding:4px 12px;margin:4px 4px 4px 0}
+.art-box{background:var(--k2);border:1px solid rgba(232,0,10,.2);padding:32px 36px;margin:36px 0}
+.art-box h4{font-family:var(--H);font-size:1.3rem;letter-spacing:1px;color:var(--red);margin-bottom:14px}
+.art-box ul{margin:0}
+.art-box ul li{border-color:rgba(255,255,255,.04)}
+
+/* BIZ CARDS */
+.bgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px}
+.bcard{background:var(--k2);padding:44px 40px;position:relative;overflow:hidden;transition:background .3s}
+.bcard:hover{background:var(--k3)}
+.bcard-n{font-family:var(--H);font-size:5rem;color:rgba(232,0,10,.06);position:absolute;top:20px;right:24px;line-height:1}
+.bcard-ico{width:52px;height:52px;background:rgba(232,0,10,.1);display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:22px;clip-path:polygon(10px 0%,100% 0%,calc(100% - 10px) 100%,0% 100%)}
+.bcard h3{font-family:var(--H);font-size:1.7rem;letter-spacing:1px;margin-bottom:12px}
+.bcard p{font-size:.9rem;color:#888;line-height:1.85}
+.bcard ul{margin-top:14px;list-style:none}
+.bcard ul li{font-size:.84rem;color:#888;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.05);display:flex;align-items:center;gap:10px}
+.bcard ul li::before{content:'→';color:var(--red);font-size:.75rem;flex-shrink:0}
+
+/* BRAND PILLARS */
+.bpillars{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.pillar{background:var(--k2);padding:40px 32px;text-align:center;transition:transform .3s;border-top:2px solid transparent}
+.pillar:hover{transform:translateY(-6px);border-top-color:var(--red)}
+.p-ico{width:64px;height:64px;margin:0 auto 20px;background:rgba(232,0,10,.1);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.6rem}
+.pillar h3{font-family:var(--H);font-size:1.4rem;letter-spacing:1px;margin-bottom:12px}
+.pillar p{font-size:.86rem;color:#888;line-height:1.8}
+.ptag{display:inline-block;margin-top:14px;font-size:.62rem;letter-spacing:2px;text-transform:uppercase;color:var(--red);border:1px solid rgba(232,0,10,.3);padding:4px 10px}
+
+/* PLAYER MGMT */
+.pmgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
+.pmcard{background:var(--k2);padding:40px 34px;transition:background .3s}
+.pmcard:hover{background:var(--k3)}
+.pmtop{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.pmico{width:48px;height:48px;background:rgba(232,0,10,.1);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:1.3rem}
+.pmcard h3{font-family:var(--H);font-size:1.35rem;letter-spacing:1px}
+.pmcard p{font-size:.86rem;color:#888;line-height:1.8}
+.pmlist{margin-top:16px;list-style:none}
+.pmlist li{font-size:.81rem;color:#777;padding:5px 0;border-bottom:1px solid rgba(255,255,255,.04);display:flex;align-items:center;gap:8px}
+.pmlist li::before{content:'✓';color:var(--red);font-weight:700;flex-shrink:0}
+
+/* LIFECYCLE */
+.lc{background:var(--k2);padding:80px 60px}
+.lc-steps{display:flex;justify-content:space-between;gap:20px;margin-top:48px;position:relative}
+.lc-steps::before{content:'';position:absolute;top:28px;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--red),rgba(232,0,10,.15));z-index:0}
+.ls{flex:1;text-align:center;position:relative;z-index:1}
+.ls-n{width:56px;height:56px;border-radius:50%;background:var(--red);margin:0 auto 16px;display:flex;align-items:center;justify-content:center;font-family:var(--H);font-size:1.4rem}
+.ls h4{font-family:var(--H);font-size:1rem;letter-spacing:1px;margin-bottom:8px}
+.ls p{font-size:.78rem;color:#777;line-height:1.6}
+
+/* PROCESS */
+.proc{background:var(--k2);padding:80px 60px}
+.psteps{display:flex;gap:0;counter-reset:ps;margin-top:48px}
+.ps{flex:1;padding:36px 28px;border-right:1px solid rgba(255,255,255,.05);position:relative}
+.ps:last-child{border-right:none}
+.ps::before{counter-increment:ps;content:counter(ps,'0');font-family:var(--H);font-size:4.5rem;color:rgba(232,0,10,.1);line-height:1;display:block;margin-bottom:16px}
+.ps h4{font-family:var(--H);font-size:1.3rem;letter-spacing:1px;margin-bottom:10px}
+.ps p{font-size:.84rem;color:#888;line-height:1.75}
+
+/* ABOUT */
+.asplit{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.aph{background:var(--k2);aspect-ratio:4/3;display:flex;flex-direction:column;align-items:center;justify-content:center;border-top:3px solid var(--red)}
+.aph .ai{font-size:5rem;opacity:.1;margin-bottom:16px}
+.aph .al{font-family:var(--H);font-size:1.1rem;letter-spacing:2px;color:var(--g);opacity:.3}
+.at h2{font-family:var(--H);font-size:clamp(2rem,4vw,3.5rem);letter-spacing:1px;margin-bottom:20px;line-height:1}
+.at h2 span{color:var(--red)}
+.at p{font-size:.95rem;color:#999;line-height:1.9;margin-bottom:16px}
+.avals{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:28px}
+.aval{background:var(--k3);padding:18px 20px;border-left:2px solid var(--red)}
+.aval h5{font-family:var(--H);font-size:1.1rem;letter-spacing:1px;margin-bottom:4px}
+.aval p{font-size:.8rem;color:#777;line-height:1.6}
+
+/* CONTACT */
+.cgrid{display:grid;grid-template-columns:1fr 1.4fr;gap:60px;margin-top:60px}
+.cinfo-label{font-size:.65rem;letter-spacing:3px;text-transform:uppercase;color:var(--red);margin-bottom:6px}
+.cinfo-val{font-size:1rem;color:var(--g2);font-weight:300;margin-bottom:28px}
+.cinfo-val a{color:var(--g2);transition:color .2s}
+.cinfo-val a:hover{color:var(--red)}
+.slinks{display:flex;gap:12px;margin-top:36px}
+.sl{width:44px;height:44px;background:var(--k2);border:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;font-size:1rem;transition:background .2s,border-color .2s;cursor:pointer}
+.sl:hover{background:rgba(232,0,10,.1);border-color:rgba(232,0,10,.4)}
+.cform{background:var(--k2);padding:46px;border-top:3px solid var(--red)}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+.fg{margin-bottom:14px}
+.fg label{display:block;font-size:.65rem;letter-spacing:2.5px;text-transform:uppercase;color:var(--g);margin-bottom:7px}
+.fg input,.fg select,.fg textarea{width:100%;background:var(--k3);border:1px solid rgba(255,255,255,.08);color:var(--w);font-family:var(--B);font-size:.9rem;padding:13px 15px;outline:none;transition:border-color .2s}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:rgba(232,0,10,.5)}
+.fg textarea{height:120px;resize:vertical}
+.fg select option{background:var(--k3)}
+.fsub{background:var(--red);color:var(--w);width:100%;padding:16px;font-family:var(--H);font-size:1.1rem;letter-spacing:3px;border:none;cursor:pointer;clip-path:polygon(12px 0%,100% 0%,calc(100% - 12px) 100%,0% 100%);transition:background .25s,transform .2s;margin-top:6px}
+.fsub:hover{background:var(--red2);transform:translateY(-2px)}
+.fnote{font-size:.72rem;color:var(--g);text-align:center;margin-top:12px}
+
+/* FOOTER */
+footer{background:var(--k2);padding:56px 60px;border-top:1px solid rgba(232,0,10,.12)}
+.fi{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:28px}
+.fl{font-family:var(--H);font-size:2rem;letter-spacing:4px;margin-bottom:8px}
+.fl em{color:var(--red);font-style:normal}
+.ft{font-size:.76rem;color:var(--g);max-width:260px;line-height:1.6}
+.fn{display:flex;gap:22px;flex-wrap:wrap}
+.fn a{font-size:.66rem;letter-spacing:2px;text-transform:uppercase;color:var(--g);transition:color .2s;cursor:pointer}
+.fn a:hover{color:var(--red)}
+.fc{font-size:.7rem;color:var(--g);margin-top:10px}
+
+/* REVEAL */
+.rev{opacity:0;transform:translateY(28px);transition:opacity .7s,transform .7s}
+.rev.in{opacity:1;transform:translateY(0)}
+.revl{opacity:0;transform:translateX(-28px);transition:opacity .7s,transform .7s}
+.revl.in{opacity:1;transform:translateX(0)}
+.revr{opacity:0;transform:translateX(28px);transition:opacity .7s,transform .7s}
+.revr.in{opacity:1;transform:translateX(0)}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .nav-inner{grid-template-columns:1fr auto;padding:0 20px}
+  .nav-links{display:none}
+  .nav-right .nav-cta-btn{display:none}
+  .burger{display:flex}
+  .sec,.phero,.art-wrap,.lc,.proc{padding-left:22px;padding-right:22px}
+  .sec{padding-top:64px;padding-bottom:64px}
+  .h-content{padding:60px 22px}
+  .h-slash{display:none}
+  .svcs,.bgrid,.pmgrid,.tgrid,.bpillars,.art-facts{grid-template-columns:1fr}
+  .why-grid,.asplit,.cgrid,.frow{grid-template-columns:1fr}
+  .lc-steps{flex-direction:column}
+  .lc-steps::before{display:none}
+  .psteps{flex-direction:column}
+  .ps{border-right:none;border-bottom:1px solid rgba(255,255,255,.05)}
+  .fi{flex-direction:column;align-items:flex-start}
+}
+</style>
+</head>
+<body>
+
+<!-- INTRO -->
+<div id="intro">
+  <p class="i-pre">Welcome to</p>
+  <div class="i-logo"><em>REDONE</em>SPORTS</div>
+  <div class="i-bar"></div>
+  <p class="i-line">We Don't Just Represent Talent.<br><strong>We Build Legacy.</strong></p>
+  <span class="i-skip" onclick="closeIntro()">Skip intro →</span>
+</div>
+
+<!-- NAV -->
+<nav id="nb">
+  <div class="nav-inner">
+    <div class="logo" onclick="goTo('home')">
+      <span class="logo-dot"></span><em>REDONE</em>SPORTS
+    </div>
+    <ul class="nav-links">
+      <li><a onclick="goTo('business')" data-p="business">Business</a></li>
+      <li><a onclick="goTo('brand')" data-p="brand">Brand</a></li>
+      <li><a onclick="goTo('players')" data-p="players">Player Management</a></li>
+      <li><a onclick="goTo('about')" data-p="about">About Us</a></li>
+      <li><a onclick="goTo('contact')" data-p="contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="nav-cta-btn" onclick="goTo('contact')">Partner With Us</button>
+      <div class="burger" id="brg" onclick="toggleMenu()" style="margin-left:16px"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+</nav>
+<div class="mob" id="mm">
+  <a onclick="go('home')">Home</a>
+  <a onclick="go('business')">Business</a>
+  <a onclick="go('brand')">Brand</a>
+  <a onclick="go('players')">Player Management</a>
+  <a onclick="go('about')">About Us</a>
+  <a onclick="go('contact')">Contact</a>
+</div>
+
+<!-- ═══════════ HOME ═══════════ -->
+<div id="pg-home" class="page show">
+  <section class="hero" aria-label="RedoneSports Homepage Hero">
+    <div class="h-glow"></div><div class="h-grid"></div><div class="h-slash"></div>
+    <div class="h-content">
+      <div class="badge">⚽ Elite Football Agency</div>
+      <h1 class="h-title">BEYOND<br><span class="r">THE</span><br>GAME</h1>
+      <p class="h-sub">RedoneSports is a premier football player management and brand agency. We develop careers, build brands, and create legacies that outlast the sport.</p>
+      <div class="cta-row">
+        <button class="btn-r" onclick="goTo('players')">Our Services</button>
+        <button class="btn-ghost" onclick="goTo('about')">Our Story →</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="sec" style="background:var(--k2)"><div class="con">
+    <div class="rev">
+      <span class="stag">What We Do</span>
+      <h2 class="stitle">BUILT FOR<br><span style="color:var(--red)">CHAMPIONS</span></h2>
+      <div class="div"></div>
+      <p class="ssub">Three powerful pillars that cover every dimension of a professional football career — business, brand, and management.</p>
+    </div>
+    <div class="svcs rev">
+      <div class="svc" onclick="goTo('business')"><div class="svc-n">01</div><div class="svc-ico">💼</div><h3>Business</h3><p>Contract negotiation, transfer deals, financial management, and legal advisory tailored exclusively to elite professional footballers.</p><span class="svc-link">Explore Business →</span></div>
+      <div class="svc" onclick="goTo('brand')"><div class="svc-n">02</div><div class="svc-ico">⚡</div><h3>Brand</h3><p>Strategic brand identity, global sponsorship deals, social media growth, and lasting media presence — built to outlive your playing career.</p><span class="svc-link">Explore Brand →</span></div>
+      <div class="svc" onclick="goTo('players')"><div class="svc-n">03</div><div class="svc-ico">🎯</div><h3>Player Management</h3><p>Full-spectrum representation: career planning, scouting, mental coaching, and life management on and off the pitch.</p><span class="svc-link">Explore Management →</span></div>
+    </div>
+  </div></div>
+
+  <div class="sec"><div class="con"><div class="why-grid">
+    <div class="revl">
+      <span class="stag">Why RedoneSports</span>
+      <h2 class="stitle">MORE THAN<br><span style="color:var(--red)">AN AGENCY</span></h2>
+      <div class="div"></div>
+      <p class="ssub">We are a partner in every sense — committed to protecting your talent, amplifying your voice, and engineering your legacy from day one.</p>
+      <br/><button class="btn-r" onclick="goTo('about')" style="margin-top:8px">Learn About Us</button>
+    </div>
+    <div class="why-cards revr">
+      <div class="wcard"><div class="wcard-ico">🏆</div><div><h4>Elite Track Record</h4><p>Over a decade placing and managing professional footballers in top leagues across Europe, Africa, and beyond.</p></div></div>
+      <div class="wcard"><div class="wcard-ico">🌍</div><div><h4>Global Network</h4><p>Deep connections with clubs, scouts, sponsors, and media in 40+ countries, giving every player maximum opportunity.</p></div></div>
+      <div class="wcard"><div class="wcard-ico">🎵</div><div><h4>Roots in Excellence</h4><p>Born from the legacy of RedOne — the Grammy-winning Moroccan icon who composed Real Madrid's anthem. Excellence runs in our DNA.</p></div></div>
+      <div class="wcard"><div class="wcard-ico">🔥</div><div><h4>Brand-First Thinking</h4><p>We treat every player as a global brand — building identity, commercial value, and influence that extends beyond football.</p></div></div>
+    </div>
+  </div></div></div>
+
+  <div class="sec" style="background:var(--k2)"><div class="con">
+    <div class="rev"><span class="stag">What They Say</span><h2 class="stitle">PLAYER<br><span style="color:var(--red)">VOICES</span></h2><div class="div"></div></div>
+    <div class="tgrid rev">
+      <div class="testi"><p>RedoneSports changed my career completely. They didn't just find me a club — they built a plan for my entire future on and off the pitch.</p><div class="t-author"><div class="t-av">KA</div><div><div class="t-name">Karim A.</div><div class="t-role">Midfielder, La Liga</div></div></div></div>
+      <div class="testi"><p>The brand team secured three major sponsorship deals within my first year. The commercial results were beyond anything I expected.</p><div class="t-author"><div class="t-av">SB</div><div><div class="t-name">Sofiane B.</div><div class="t-role">Forward, Ligue 1</div></div></div></div>
+      <div class="testi"><p>No agency understands both the sport and the business side like RedoneSports. Their connections are at a completely different level.</p><div class="t-author"><div class="t-av">YR</div><div><div class="t-name">Youssef R.</div><div class="t-role">Defender, Bundesliga</div></div></div></div>
+    </div>
+  </div></div>
+
+  <div class="cband"><div class="con" style="position:relative;z-index:1"><h2 class="rev">YOUR LEGACY<br>STARTS NOW</h2><p class="rev">Join the roster of players who chose to build something bigger than themselves.</p><button class="btn-w rev" onclick="goTo('contact')">Get In Touch</button></div></div>
+  <footer><div class="fi"><div><div class="fl"><em>REDONE</em>SPORTS</div><p class="ft">We Don't Just Represent Talent. We Build Legacy.</p></div><div><div class="fn"><a onclick="goTo('business')">Business</a><a onclick="goTo('brand')">Brand</a><a onclick="goTo('players')">Player Management</a><a onclick="goTo('about')">About Us</a><a onclick="goTo('contact')">Contact</a></div><p class="fc">© 2025 RedoneSports. All rights reserved.</p></div></div></footer>
+</div>
+
+<!-- ═══════════ BUSINESS ═══════════ -->
+<div id="pg-business" class="page">
+  <div class="phero" style="background:var(--k2)">
+    <div class="phi">
+      <span class="stag">Professional Football Business Services</span>
+      <h1>BUSINESS<br><span>SOLUTIONS</span></h1>
+      <div class="div"></div>
+      <p>From contract negotiations to financial planning and legal compliance — we handle every business dimension of your professional football career with precision, integrity, and relentless ambition.</p>
+    </div>
+  </div>
+
+  <div class="sec" style="background:var(--k)"><div class="con">
+    <div class="bgrid rev">
+      <div class="bcard"><div class="bcard-n">01</div><div class="bcard-ico">📝</div><h3>Contract Negotiation</h3><p>We represent you at the negotiating table with full legal expertise and real-time market data, ensuring every clause protects your interests and maximizes your earning potential.</p><ul><li>Salary structure and bonus optimization</li><li>Performance incentives and goal bonuses</li><li>Release clause management and strategy</li><li>Contract extension and renewal tactics</li></ul></div>
+      <div class="bcard"><div class="bcard-n">02</div><div class="bcard-ico">🔄</div><h3>Transfer Management</h3><p>We coordinate every step of the transfer window — from identifying the ideal destination clubs to completing all regulatory requirements across national and international leagues.</p><ul><li>Club identification and suitability analysis</li><li>Transfer fee and structure negotiation</li><li>Loan deal structuring and management</li><li>International transfer certificate handling</li></ul></div>
+      <div class="bcard"><div class="bcard-n">03</div><div class="bcard-ico">💰</div><h3>Financial Management</h3><p>We connect players with certified financial advisors to build a future as solid as their career — with smart investments, comprehensive tax planning, and long-term wealth strategies.</p><ul><li>Personal wealth planning and budgeting</li><li>Tax optimization across multiple jurisdictions</li><li>Real estate and investment portfolio guidance</li><li>Post-career financial security planning</li></ul></div>
+      <div class="bcard"><div class="bcard-n">04</div><div class="bcard-ico">⚖️</div><h3>Legal Advisory</h3><p>Our legal team ensures full compliance with FIFA regulations, national football associations, and international employment law — protecting you at every stage of your career.</p><ul><li>FIFA and national association compliance</li><li>Image rights registration and protection</li><li>Employment dispute resolution</li><li>Contract arbitration and legal defense</li></ul></div>
+    </div>
+
+    <!-- BUSINESS ARTICLE -->
+    <div style="margin-top:80px;padding-top:80px;border-top:1px solid rgba(255,255,255,.06)">
+      <article class="art-wrap" itemscope itemtype="https://schema.org/Article">
+        <span class="art-cat">📋 In-Depth Guide</span>
+        <h2 class="art-title" itemprop="headline">HOW ELITE <span>FOOTBALL BUSINESS</span> MANAGEMENT WORKS</h2>
+        <p class="art-deck">Everything a professional footballer needs to understand about contract negotiation, transfer management, financial planning, and the business structures that protect elite careers in modern football.</p>
+        <div class="art-meta">
+          <span>By <strong>RedoneSports Business Team</strong></span>
+          <span>Topic: <strong>Football Business</strong></span>
+          <span>Read: <strong>7 min</strong></span>
+        </div>
+        <div class="art-body" itemprop="articleBody">
+          <h2>Why Business Management Is Non-Negotiable in Modern Football</h2>
+          <p>The modern professional footballer operates in one of the most financially complex industries in the world. Transfer fees routinely exceed €50 million. Image rights deals span multiple continents. Tax regulations vary between every country where a player earns income. Agent commissions, club interests, sponsor obligations, and personal finances intertwine in ways that can either build or destroy a career off the pitch.</p>
+          <p>At <strong>RedoneSports</strong>, we believe that every elite footballer deserves expert business representation — not just someone to negotiate a contract, but a dedicated team that understands every financial, legal, and strategic dimension of their career. This article explains what comprehensive football business management looks like, and why getting it right from day one makes all the difference.</p>
+
+          <h2>Contract Negotiation: The Foundation of Every Football Career</h2>
+          <p>A football contract is far more than a salary figure. It determines your earning potential for years, your freedom to move clubs, your rights to commercial income, and your financial security in the event of injury. The difference between a well-negotiated and a poorly negotiated contract can amount to millions of euros over the course of a career.</p>
+          <p><strong>Salary Structure:</strong> Top business managers always look beyond the base salary. Signing-on fees, performance bonuses tied to goals and assists, appearance bonuses, and loyalty bonuses all form part of a comprehensive compensation package. We ensure every variable is structured to maximize a player's earning potential across every possible scenario.</p>
+          <p><strong>Release Clauses:</strong> A release clause can be a player's greatest tool for career mobility — or a club's mechanism for locking talent down. Setting the right figure at the right moment in a career requires detailed knowledge of market valuations, club ambitions, and league dynamics. Our team uses live Transfermarkt and proprietary data to inform every decision.</p>
+          <p><strong>Contract Length and Timing:</strong> Knowing when to renew, when to run down a contract, and when to push for a release are strategic decisions that can define a career. We advise every player on the precise moment to act based on their market value, age, performance trajectory, and club situation.</p>
+
+          <div class="art-box">
+            <h4>Key Contract Negotiation Services at RedoneSports</h4>
+            <ul>
+              <li>Full salary, bonus, and incentive package negotiation</li>
+              <li>Release clause strategy and negotiation</li>
+              <li>Contract renewal timing and market positioning</li>
+              <li>Image rights and commercial revenue clauses</li>
+              <li>Injury protection and insurance provisions</li>
+              <li>Multi-club option structuring</li>
+            </ul>
+          </div>
+
+          <h2>Transfer Management: Navigating the Global Football Market</h2>
+          <p>The global football transfer market moves billions of euros every year and involves dozens of competing interests — clubs, agents, federations, leagues, and players. Without expert guidance, a footballer can find themselves in the wrong club, in the wrong league, at the wrong time — all of which can permanently damage their development and market value.</p>
+          <p>RedoneSports approaches every transfer as a strategic career move. We don't simply respond to offers — we proactively identify the clubs and leagues that best suit a player's profile, negotiate the optimal financial terms, and manage the full administrative process from beginning to end. Our network of relationships with sporting directors and club executives across Europe, Africa, the Middle East, and the Americas means we identify opportunities before they reach the open market.</p>
+
+          <h2>Financial Management for Professional Footballers</h2>
+          <p>Footballers face a unique financial challenge: high income concentrated into a relatively short career window, earned across multiple countries with different tax systems, and required to sustain a comfortable life for decades after retiring. Without expert financial planning, even the highest earners can find themselves in serious difficulty after their playing careers end.</p>
+          <p>The most important thing any young footballer can do is begin financial planning from the moment they sign their first professional contract. At RedoneSports, we connect every player with certified financial advisors who specialise in high-net-worth sports professionals — ensuring their money is invested wisely, their tax liability is minimized legally, and their post-career security is guaranteed.</p>
+
+          <div class="art-quote">"The best investment a footballer can make is in the people who manage their money. The pitch career is short. The financial decisions last forever."</div>
+
+          <h2>Legal Protection: Your Rights, Always Defended</h2>
+          <p>From image rights to employment law, from FIFA dispute resolution to national labour regulations — the legal landscape for professional footballers is extraordinarily complex. A single contractual misunderstanding or missed clause can cost a player millions and years of their career.</p>
+          <p>Our legal advisory service covers the full spectrum of footballer legal needs. We ensure FIFA compliance on every transfer, register and protect image rights in every territory where a player earns commercial income, advise on dual representation conflicts, and represent players in any dispute resolution or arbitration process that may arise.</p>
+
+          <div class="art-facts">
+            <div class="af"><div class="af-n">€2B+</div><div class="af-l">Deals Managed Globally</div></div>
+            <div class="af"><div class="af-n">40+</div><div class="af-l">Countries Covered</div></div>
+            <div class="af"><div class="af-n">100%</div><div class="af-l">Player-First Approach</div></div>
+          </div>
+
+          <div style="margin-top:32px"><p style="font-size:.78rem;color:var(--g);margin-bottom:12px">Related topics:</p><span class="art-tag">Football Contract Negotiation</span><span class="art-tag">Soccer Player Agent</span><span class="art-tag">Transfer Management</span><span class="art-tag">Athlete Financial Planning</span><span class="art-tag">FIFA Compliance</span><span class="art-tag">Image Rights Football</span><span class="art-tag">Sports Legal Advisory</span></div>
+        </div>
+      </article>
+    </div>
+  </div></div>
+
+  <div class="proc"><div class="con">
+    <div class="rev"><span class="stag">Our Process</span><h2 class="stitle">HOW WE<br><span style="color:var(--red)">WORK</span></h2><div class="div"></div></div>
+    <div class="psteps rev">
+      <div class="ps"><h4>Discovery</h4><p>We understand your career goals, current situation, and long-term vision in full.</p></div>
+      <div class="ps"><h4>Strategy</h4><p>We build a tailored business plan covering contracts, transfers, and financial milestones.</p></div>
+      <div class="ps"><h4>Execution</h4><p>Our team negotiates and delivers results with complete transparency at every step.</p></div>
+      <div class="ps"><h4>Growth</h4><p>We continuously adapt and elevate your career value in an ever-changing market.</p></div>
+    </div>
+  </div></div>
+  <div class="cband"><div class="con" style="position:relative;z-index:1"><h2>READY TO NEGOTIATE?</h2><p>Let our business team go to work for you.</p><button class="btn-w" onclick="goTo('contact')">Contact Us Today</button></div></div>
+  <footer><div class="fi"><div><div class="fl"><em>REDONE</em>SPORTS</div><p class="ft">We Don't Just Represent Talent. We Build Legacy.</p></div><div><div class="fn"><a onclick="goTo('home')">Home</a><a onclick="goTo('brand')">Brand</a><a onclick="goTo('players')">Player Management</a><a onclick="goTo('about')">About Us</a><a onclick="goTo('contact')">Contact</a></div><p class="fc">© 2025 RedoneSports. All rights reserved.</p></div></div></footer>
+</div>
+
+<!-- ═══════════ BRAND ═══════════ -->
+<div id="pg-brand" class="page">
+  <div class="phero" style="background:var(--k)">
+    <div class="phi">
+      <span class="stag">Athlete Brand Building & Sponsorship</span>
+      <h1>BRAND<br><span>POWER</span></h1>
+      <div class="div"></div>
+      <p>In modern football, your personal brand is as commercially valuable as your playing contract. We help professional athletes build identities that transcend the pitch — connecting with sponsors, media, and fans for life.</p>
+    </div>
+  </div>
+
+  <div class="sec"><div class="con">
+    <div class="rev"><span class="stag">Brand Services</span><h2 class="stitle">YOUR BRAND,<br><span style="color:var(--red)">OUR MISSION</span></h2><div class="div"></div></div>
+    <div class="bpillars rev" style="margin-top:48px">
+      <div class="pillar"><div class="p-ico">🎨</div><h3>Brand Identity</h3><p>Unique visual identity, personal narrative, and positioning that makes you recognizable as a global figure beyond football.</p><span class="ptag">Identity</span></div>
+      <div class="pillar"><div class="p-ico">📱</div><h3>Social Media</h3><p>Full strategy, content creation, and community management to grow following, engagement, and commercial appeal across all platforms.</p><span class="ptag">Digital</span></div>
+      <div class="pillar"><div class="p-ico">🤝</div><h3>Sponsorships</h3><p>We connect you with global brands — sportswear, lifestyle, tech — securing deals that match your values and maximize income.</p><span class="ptag">Partnerships</span></div>
+      <div class="pillar"><div class="p-ico">📺</div><h3>Media Relations</h3><p>Press, documentaries, advertising campaigns — placed in front of exactly the right audience at exactly the right moment.</p><span class="ptag">Media</span></div>
+      <div class="pillar"><div class="p-ico">🎬</div><h3>Content Creation</h3><p>Professional photo, video, and editorial content giving your audience an authentic and compelling window into your world.</p><span class="ptag">Creative</span></div>
+      <div class="pillar"><div class="p-ico">🌐</div><h3>Global Presence</h3><p>Strategic brand placement across Europe, Africa, the Middle East, and Latin America for truly international reach and revenue.</p><span class="ptag">Global</span></div>
+    </div>
+
+    <!-- BRAND ARTICLE -->
+    <div style="margin-top:80px;padding-top:80px;border-top:1px solid rgba(255,255,255,.06)">
+      <article class="art-wrap" itemscope itemtype="https://schema.org/Article">
+        <span class="art-cat">⚡ Brand Strategy Guide</span>
+        <h2 class="art-title">BUILDING AN <span>ATHLETE BRAND</span> THAT OUTLASTS YOUR CAREER</h2>
+        <p class="art-deck">How professional footballers can build a personal brand that generates commercial revenue, deepens fan connection, and creates financial security long after the final whistle blows.</p>
+        <div class="art-meta">
+          <span>By <strong>RedoneSports Brand Team</strong></span>
+          <span>Topic: <strong>Athlete Branding</strong></span>
+          <span>Read: <strong>6 min</strong></span>
+        </div>
+        <div class="art-body" itemprop="articleBody">
+          <h2>Why Personal Branding Is Now Essential for Professional Footballers</h2>
+          <p>Twenty years ago, a footballer's commercial value was largely determined by the club they played for and the trophies they won. Today, the equation is completely different. Cristiano Ronaldo's Instagram account has over 600 million followers — a commercial asset worth hundreds of millions of dollars independently of any club deal. Kylian Mbappé's personal brand generates sponsorship income that rivals his playing salary. Even players in lower leagues are building audiences of hundreds of thousands that attract local and regional sponsors.</p>
+          <p>The footballer who understands and invests in their personal brand creates a second career — one that runs parallel to their playing career and continues long after it ends. At <strong>RedoneSports</strong>, we help every player we represent build a distinctive, authentic, and commercially powerful brand identity from the very start.</p>
+
+          <h2>The Five Pillars of a Powerful Football Athlete Brand</h2>
+          <p><strong>1. Authentic Identity:</strong> The most successful athlete brands are rooted in who the player genuinely is — their background, values, personality, and story. Fans are sophisticated consumers who can immediately detect inauthenticity. We work with every player to identify and articulate their genuine identity, then build every brand element around that core truth.</p>
+          <p><strong>2. Visual Brand System:</strong> From a personal logo to colour palette, typography, and photography style — a consistent visual identity makes a player instantly recognizable across every platform and channel. We develop complete brand systems for each player we represent, ensuring every piece of content communicates a unified, professional image.</p>
+          <p><strong>3. Digital Presence and Social Media:</strong> Social media is now the primary battleground for athlete brand-building. A well-managed Instagram, TikTok, YouTube, or X (Twitter) account can generate direct sponsorship income, increase market value, and create a direct channel to millions of fans worldwide. Our social media team develops platform-specific strategies, manages content calendars, and grows engagement rates that translate into real commercial value.</p>
+          <p><strong>4. Strategic Sponsorships:</strong> The right sponsorship deal does more than generate immediate income. It positions a player alongside brands that enhance their image, introduce them to new audiences, and create long-term commercial relationships. We only pursue sponsors whose values align with the player's identity — protecting brand integrity while maximising revenue.</p>
+          <p><strong>5. Media Presence:</strong> Interviews, documentaries, podcasts, advertising campaigns, and editorial features all contribute to building a player's public profile. We proactively place our clients in the media opportunities that best serve their brand — while carefully managing what they say no to, which is equally important.</p>
+
+          <div class="art-quote">"The players who will be wealthy for life are not those who earned the most — they are those who built brands that continued working after they stopped playing."</div>
+
+          <h2>Athlete Sponsorship: How to Attract and Retain Global Brand Partners</h2>
+          <p>Brand sponsorship for footballers has evolved dramatically. Where once only the biggest stars attracted major global partners, today a player with a highly engaged niche audience of 500,000 followers can command significant sponsorship fees from the right brands in the right categories.</p>
+          <p>The key to securing quality sponsorships is positioning. We develop detailed brand decks for each player that present their audience demographics, engagement rates, values, and commercial reach in a format that speaks directly to brand marketing departments. We then approach sponsors strategically — prioritising brands where there is a genuine fit, rather than pursuing every available opportunity regardless of alignment.</p>
+          <p>Our sponsorship portfolio work spans sportswear, lifestyle, watches, automotive, nutrition, technology, fashion, and financial services — giving every player a diversified commercial income stream that reduces dependence on any single contract or club deal.</p>
+
+          <h2>Social Media Strategy for Professional Footballers</h2>
+          <p>An effective social media strategy for a professional footballer is not simply about posting highlights and training videos. It requires a sophisticated understanding of algorithms, content formats, audience psychology, and platform dynamics — combined with an authentic voice that represents the player genuinely.</p>
+          <p>At RedoneSports, our social media team develops bespoke strategies for each client, identifying which platforms best suit their personality and audience, what content mix drives highest engagement, and how to grow followers strategically without compromising the authenticity that makes athlete accounts so commercially powerful.</p>
+
+          <div class="art-facts">
+            <div class="af"><div class="af-n">+320%</div><div class="af-l">Avg Social Growth</div></div>
+            <div class="af"><div class="af-n">87%</div><div class="af-l">Sponsorship Success Rate</div></div>
+            <div class="af"><div class="af-n">+240%</div><div class="af-l">Brand Value in 2 Years</div></div>
+          </div>
+
+          <h2>Building a Post-Career Brand: Why It Starts Now</h2>
+          <p>The biggest mistake a professional footballer can make with their personal brand is waiting until retirement to think about it. The players who transition most successfully into post-career commercial careers — media, business, coaching, ambassadorship — are those who built strong personal brands throughout their playing career.</p>
+          <p>We begin every brand engagement with a long-term perspective. Every sponsorship deal, every media appearance, every piece of social content is evaluated not just for its immediate commercial value, but for how it contributes to building a brand that will still be commercially powerful at 40, 50, and beyond.</p>
+
+          <div style="margin-top:32px"><p style="font-size:.78rem;color:var(--g);margin-bottom:12px">Related topics:</p><span class="art-tag">Athlete Brand Management</span><span class="art-tag">Football Sponsorship Deals</span><span class="art-tag">Soccer Player Branding</span><span class="art-tag">Sports Marketing</span><span class="art-tag">Athlete Social Media</span><span class="art-tag">Player Endorsements</span><span class="art-tag">Post-Career Athlete Brand</span></div>
+        </div>
+      </article>
+    </div>
+  </div></div>
+  <div class="cband"><div class="con" style="position:relative;z-index:1"><h2>BUILD YOUR<br>BRAND TODAY</h2><p>Your story deserves to be heard by the world.</p><button class="btn-w" onclick="goTo('contact')">Start Building Now</button></div></div>
+  <footer><div class="fi"><div><div class="fl"><em>REDONE</em>SPORTS</div><p class="ft">We Don't Just Represent Talent. We Build Legacy.</p></div><div><div class="fn"><a onclick="goTo('home')">Home</a><a onclick="goTo('business')">Business</a><a onclick="goTo('players')">Player Management</a><a onclick="goTo('about')">About Us</a><a onclick="goTo('contact')">Contact</a></div><p class="fc">© 2025 RedoneSports. All rights reserved.</p></div></div></footer>
+</div>
+
+<!-- ═══════════ PLAYER MANAGEMENT ═══════════ -->
+<div id="pg-players" class="page">
+  <div class="phero" style="background:linear-gradient(135deg,var(--k2),var(--k))">
+    <div class="phi">
+      <span class="stag">Complete Football Player Representation</span>
+      <h1>PLAYER<br><span>MANAGEMENT</span></h1>
+      <div class="div"></div>
+      <p>We believe professional player management extends far beyond contracts. We are your advisor, protector, strategist, and partner — covering every aspect of your life and career as a professional athlete.</p>
+    </div>
+  </div>
+
+  <div class="sec"><div class="con">
+    <div class="pmgrid rev">
+      <div class="pmcard"><div class="pmtop"><div class="pmico">🗺️</div><h3>Career Planning</h3></div><p>Long-term career trajectory mapping — identifying the right clubs, leagues, and timing for every move.</p><ul class="pmlist"><li>Short and long-term career roadmap</li><li>League and club suitability analysis</li><li>Playing time and development optimization</li><li>Exit and transition strategy planning</li></ul></div>
+      <div class="pmcard"><div class="pmtop"><div class="pmico">🔭</div><h3>Scouting & Discovery</h3></div><p>Our global scouting network identifies emerging talent early, giving players a structured pathway from youth to professional level.</p><ul class="pmlist"><li>Talent identification and assessment</li><li>Video analysis and player profiling</li><li>Club trial arrangement internationally</li><li>Youth to senior football pathways</li></ul></div>
+      <div class="pmcard"><div class="pmtop"><div class="pmico">🧠</div><h3>Mental Coaching</h3></div><p>Elite performance starts in the mind. Certified sports psychologists keep players focused, resilient, and performing at peak.</p><ul class="pmlist"><li>Performance psychology and mindset work</li><li>Pressure and anxiety management</li><li>Confidence building programs</li><li>Ongoing mental wellness support</li></ul></div>
+      <div class="pmcard"><div class="pmtop"><div class="pmico">🏋️</div><h3>Performance Support</h3></div><p>Elite trainers, physiotherapists, and performance analysts to maintain physical peak condition across the full season.</p><ul class="pmlist"><li>Personalized fitness program design</li><li>Injury prevention and recovery</li><li>Nutrition and sports diet planning</li><li>Off-season conditioning programs</li></ul></div>
+      <div class="pmcard"><div class="pmtop"><div class="pmico">🏠</div><h3>Relocation Support</h3></div><p>Moving to a new country is complex. We manage housing, visas, schooling, and family integration end-to-end.</p><ul class="pmlist"><li>Housing search and arrangement</li><li>Visa and work permit assistance</li><li>Family settlement and schooling support</li><li>Cultural and language preparation</li></ul></div>
+      <div class="pmcard"><div class="pmtop"><div class="pmico">🎓</div><h3>Post-Career Transition</h3></div><p>We prepare players for life after football through education, business ventures, and coaching pathway development.</p><ul class="pmlist"><li>Education and certification programs</li><li>Business venture identification and guidance</li><li>Coaching and media career pathways</li><li>Investment and financial security planning</li></ul></div>
+    </div>
+
+    <!-- PLAYER MANAGEMENT ARTICLE -->
+    <div style="margin-top:80px;padding-top:80px;border-top:1px solid rgba(255,255,255,.06)">
+      <article class="art-wrap" itemscope itemtype="https://schema.org/Article">
+        <span class="art-cat">🎯 Complete Guide</span>
+        <h2 class="art-title">WHAT DOES ELITE <span>FOOTBALL PLAYER MANAGEMENT</span> ACTUALLY MEAN?</h2>
+        <p class="art-deck">A comprehensive look at what truly professional player management covers — from career planning and scouting to mental health, relocation, performance support, and the crucial transition out of the game.</p>
+        <div class="art-meta">
+          <span>By <strong>RedoneSports Management Team</strong></span>
+          <span>Topic: <strong>Player Management</strong></span>
+          <span>Read: <strong>8 min</strong></span>
+        </div>
+        <div class="art-body" itemprop="articleBody">
+          <h2>The Problem with Traditional Football Representation</h2>
+          <p>For too long, football player representation meant one thing: finding a club and negotiating a fee. The agent collected their percentage, the player signed the contract, and the representation effectively ended there. What happened on the pitch, in the player's personal life, in their mental state, in their finances, in their family's wellbeing — none of that was the agent's concern.</p>
+          <p>At <strong>RedoneSports</strong>, we reject that model entirely. We believe that a footballer who is well-managed in every dimension of their life will perform better, earn more, last longer, and transition more successfully than one who is managed only transactionally. This is what we mean by elite player management — and this article explains every component of what that looks like in practice.</p>
+
+          <h2>Career Planning: Strategy Before Every Move</h2>
+          <p>Every major career decision a footballer makes — which club to join, when to leave, which league to target, whether to accept a loan — should be driven by strategy, not just by the best financial offer available at that moment. A move that maximises today's salary but limits tomorrow's development is a bad move, regardless of the contract value.</p>
+          <p>We approach every client's career as a long-term project. From the moment we begin representing a player, we map out a clear vision of where they want to be in 2 years, 5 years, and at the end of their career — and then we make every decision in service of that vision. This means sometimes recommending a lower-paying move to a club that offers better playing time, a better league profile, or better development conditions. It means planning transfer windows 12–18 months in advance rather than reacting to whatever offers arrive. It means thinking about the player's entire career arc, not just the next contract.</p>
+
+          <h2>Scouting and Talent Development: Building Careers from the Ground Up</h2>
+          <p>RedoneSports does not only work with established professional players. We actively identify and develop emerging talent through our global scouting network — giving young footballers a structured, professional pathway from the earliest stages of their career.</p>
+          <p>Our scouts operate across Morocco, North Africa, West Africa, Europe, and Latin America — identifying players with the technical quality, physical profile, and mental character to reach the professional level. Once identified, we provide a complete development environment: video analysis, training program design, trial arrangement at professional clubs, and ongoing monitoring of progress.</p>
+
+          <div class="art-quote">"The best time to begin professional player management is not when you sign your first contract — it is the moment you decide you want to become a professional footballer."</div>
+
+          <h2>Mental Health and Performance Psychology in Football</h2>
+          <p>Elite sporting performance is 50% physical and 50% mental — yet mental health support remains one of the most neglected areas of professional football management. Pressure from fans, media scrutiny, injury setbacks, contract uncertainty, family separation, and cultural isolation can all significantly impact a player's mental state and, consequently, their performance on the pitch.</p>
+          <p>At RedoneSports, every player we represent has access to a certified sports psychologist as part of their management package. We do not wait for a crisis to emerge — we provide proactive, ongoing mental performance support that keeps players in the optimal psychological state for peak performance week after week.</p>
+          <p>Key areas our sports psychology service covers include pre-match performance routines, managing expectation and pressure, recovering psychologically from injury, adapting to new clubs and cultures, and building the self-belief and resilience that separates good players from great ones.</p>
+
+          <h2>Physical Performance: The Science of Staying at the Top</h2>
+          <p>Modern professional football is more physically demanding than at any previous point in history. Playing schedules are longer, pressing intensities are higher, and the margins between top-level performance and injury are thinner than ever. Managing a player's physical condition through the full season — including pre-season, in-season, and off-season periods — requires professional expertise across multiple disciplines.</p>
+          <p>We connect our players with elite-level sports scientists, physiotherapists, nutritionists, and strength-and-conditioning coaches who work alongside their club's medical team to ensure optimal physical preparation and recovery. Injury prevention is prioritised above everything else — because an unavailable player is a player whose market value is declining every day they are not on the pitch.</p>
+
+          <h2>Relocation and Family Support: The Overlooked Priority</h2>
+          <p>A footballer who has relocated to a new country, whose family is struggling to settle, whose children are unhappy at school, or who feels isolated and culturally lost, cannot perform at their best. The personal and family dimension of a footballer's life is inseparable from their professional performance — and it is an area that traditional representation almost entirely ignores.</p>
+          <p>RedoneSports provides comprehensive relocation support for every player who moves to a new country. We handle housing searches, school placements for children, visa and work permit applications, bank account setup, language support, and cultural orientation — for the player and their entire family. The goal is simple: the player should be able to focus entirely on football from the moment they arrive at their new club.</p>
+
+          <h2>Post-Career Planning: Preparing for Life After Football</h2>
+          <p>The average professional football career lasts approximately 15 years. For a player who begins their professional career at 18, retirement can come as early as 33 — with potentially 50 or more years of life still ahead. The transition out of professional sport is one of the most psychologically challenging experiences any person can face, and it is made far harder when it is not planned for in advance.</p>
+          <p>We begin post-career planning with every player we represent from the very start of our relationship — not when they are approaching retirement. This includes financial planning that ensures long-term security, education and certification programs that open doors to post-career careers, media training that prepares players for broadcasting and commentary roles, and business mentoring for those who want to launch ventures after football.</p>
+
+          <div class="art-facts">
+            <div class="af"><div class="af-n">6</div><div class="af-l">Service Areas Covered</div></div>
+            <div class="af"><div class="af-n">360°</div><div class="af-l">Player Support Model</div></div>
+            <div class="af"><div class="af-n">Life</div><div class="af-l">Long Partnership</div></div>
+          </div>
+
+          <div style="margin-top:32px"><p style="font-size:.78rem;color:var(--g);margin-bottom:12px">Related topics:</p><span class="art-tag">Football Player Management</span><span class="art-tag">Soccer Player Agent</span><span class="art-tag">Athlete Career Planning</span><span class="art-tag">Sports Performance Management</span><span class="art-tag">Player Mental Health Football</span><span class="art-tag">Football Transfer Agency</span><span class="art-tag">Post-Career Football Planning</span></div>
+        </div>
+      </article>
+    </div>
+  </div></div>
+
+  <div class="lc"><div class="con">
+    <div class="rev"><span class="stag">The Player Journey</span><h2 class="stitle">WE ARE WITH<br><span style="color:var(--red)">YOU ALWAYS</span></h2><div class="div"></div></div>
+    <div class="lc-steps rev">
+      <div class="ls"><div class="ls-n">1</div><h4>Discovery</h4><p>Talent identified through our global scouting network</p></div>
+      <div class="ls"><div class="ls-n">2</div><h4>Development</h4><p>Physical, mental and technical growth programs</p></div>
+      <div class="ls"><div class="ls-n">3</div><h4>Placement</h4><p>Strategic move to the right club and league</p></div>
+      <div class="ls"><div class="ls-n">4</div><h4>Growth</h4><p>Career elevation, contracts and brand building</p></div>
+      <div class="ls"><div class="ls-n">5</div><h4>Legacy</h4><p>Post-career planning and life after football</p></div>
+    </div>
+  </div></div>
+  <div class="cband"><div class="con" style="position:relative;z-index:1"><h2>WE MANAGE<br>YOUR GAME</h2><p>So you can focus entirely on what you do best — playing football.</p><button class="btn-w" onclick="goTo('contact')">Join Our Roster</button></div></div>
+  <footer><div class="fi"><div><div class="fl"><em>REDONE</em>SPORTS</div><p class="ft">We Don't Just Represent Talent. We Build Legacy.</p></div><div><div class="fn"><a onclick="goTo('home')">Home</a><a onclick="goTo('business')">Business</a><a onclick="goTo('brand')">Brand</a><a onclick="goTo('about')">About Us</a><a onclick="goTo('contact')">Contact</a></div><p class="fc">© 2025 RedoneSports. All rights reserved.</p></div></div></footer>
+</div>
+
+<!-- ═══════════ ABOUT ═══════════ -->
+<div id="pg-about" class="page">
+  <div class="phero" style="background:var(--k2)">
+    <div class="phi">
+      <span class="stag">Our Story & The RedOne Legacy</span>
+      <h1>ABOUT<br><span>REDONE</span></h1>
+      <div class="div"></div>
+      <p>RedoneSports is more than an agency. It is a statement built on a legacy of excellence — inspired by the man who made the world sing for Real Madrid and proved that greatness knows no boundary.</p>
+    </div>
+  </div>
+
+  <div class="sec"><div class="con">
+    <div class="asplit">
+      <div class="aph revl"><div class="ai">⚽</div><div class="al">RedoneSports Agency</div></div>
+      <div class="at revr">
+        <h2>BORN FROM<br><span>GREATNESS</span></h2>
+        <div class="div"></div>
+        <p>RedoneSports was founded with a singular vision: to bring the same pursuit of excellence that defines the world's greatest athletes to the business of representing them. We are a full-service platform combining elite sports management with world-class brand architecture.</p>
+        <p>Our name carries weight — directly connected to the legacy of RedOne, the Moroccan Grammy-winning music producer who shaped pop culture, composed Real Madrid's iconic anthem, and proved that greatness crosses every industry. That spirit of ambition, creativity, and global thinking drives everything we do.</p>
+        <p>We serve professional footballers across Europe, Africa, the Middle East, and the Americas — building careers, protecting talent, and creating brands that outlast playing careers.</p>
+        <div class="avals">
+          <div class="aval"><h5>Integrity</h5><p>Complete transparency and honesty in every deal.</p></div>
+          <div class="aval"><h5>Excellence</h5><p>The highest standards in everything we deliver.</p></div>
+          <div class="aval"><h5>Ambition</h5><p>We think big for our players and the sport.</p></div>
+          <div class="aval"><h5>Legacy</h5><p>We build things that last — brands, careers, bonds.</p></div>
+        </div>
+      </div>
+    </div>
+  </div></div>
+
+  <!-- REDONE ARTICLE -->
+  <div class="sec" style="background:var(--k2)"><div class="con">
+    <article class="art-wrap" itemscope itemtype="https://schema.org/Article">
+      <span class="art-cat">✦ The Inspiration Behind RedoneSports</span>
+      <h1 class="art-title" itemprop="headline">THE MAN WHO MADE<br><span>MADRID SING</span></h1>
+      <p class="art-deck">From the streets of Tétouan to the studios of Stockholm, from Lady Gaga's dressing room to the Santiago Bernabéu — the extraordinary story of RedOne, the Moroccan genius who became one of the most powerful creative forces in global music and sport history.</p>
+      <div class="art-meta">
+        <span>By <strong>RedoneSports Editorial</strong></span>
+        <span>Category: <strong>Legacy & Inspiration</strong></span>
+        <span>Read: <strong>9 min</strong></span>
+      </div>
+      <div class="art-body" itemprop="articleBody">
+        <div class="art-facts">
+          <div class="af"><div class="af-n">3</div><div class="af-l">Grammy Awards</div></div>
+          <div class="af"><div class="af-n">35+</div><div class="af-l">Number One Singles</div></div>
+          <div class="af"><div class="af-n">4</div><div class="af-l">FIFA World Cup Anthems</div></div>
+        </div>
+
+        <h2>A Journey That Defied Every Limit</h2>
+        <p>Nadir Khayat was born on April 9, 1972, in Tétouan, Morocco — a coastal city in the north of the country with a rich cultural and artistic history. The youngest of nine children, he grew up in a household where music was the language of everyday life. From a very early age, Khayat's ears were tuned to rhythm, melody, and feeling — a gift that would eventually make him one of the most sought-after music producers on the planet.</p>
+        <p>In 1991, at just 19 years old, he made a decision that would change everything: he left Morocco for Sweden. Drawn by the extraordinary music emerging from Stockholm — ABBA, Europe, Roxette — he arrived in a country whose language he barely knew. He slept on studio floors, networked tirelessly, and refused to let any obstacle become permanent. That resilience became the defining thread of his entire life and career.</p>
+
+        <div class="art-quote">"I always thought that one day, if I became famous, I would do something for Madrid — because it represents everything to me." — RedOne</div>
+
+        <h2>The Making of a Global Hit Machine</h2>
+        <p>By 1995, Khayat had pivoted from performing to producing music for others. Collaborating with Palestinian-Swedish producer <strong>Rami Yacoub</strong>, he learned programming, sound engineering, and the craft of commercially powerful music. He chose the stage name <strong>RedOne</strong> — a tribute to his close friend Redouan, who had made a crucial introduction at the right moment.</p>
+        <p>In 2006, his track <strong>"Bamboo"</strong> was selected as the official melody of the FIFA World Cup — his first major step onto the global sports stage. It would not be his last.</p>
+
+        <h2>Lady Gaga and the Explosion of Global Stardom</h2>
+        <p>In 2007, RedOne relocated to the United States believing it was his moment to break through on the world's biggest stage. He was introduced to a young unsigned artist named <strong>Lady Gaga</strong>. Even after Island Def Jam dropped her from their roster, RedOne continued producing for her without payment — because he believed absolutely in her talent.</p>
+        <p>That belief produced one of music history's most dramatic results. Their collaboration on Gaga's debut album <strong>The Fame</strong> (2008) generated global smash hits including <em>Just Dance</em>, <em>Poker Face</em>, and <em>LoveGame</em>. <em>Poker Face</em> topped charts in dozens of countries and earned RedOne his first <strong>Grammy Award for Best Dance Recording</strong> in 2010.</p>
+        <p>The Fame Monster (2009) followed with <em>Bad Romance</em> — a masterpiece that cemented both artists as defining cultural forces of the era. Their second Grammy — <strong>Best Pop Vocal Album</strong> — confirmed what the world already knew. By 2009, RedOne had been named the <strong>No. 1 producer on the Billboard Hot 100</strong>. The boy from Tétouan had become the most commercially successful music producer on the planet.</p>
+
+        <div class="art-facts">
+          <div class="af"><div class="af-n">#1</div><div class="af-l">Billboard Producer 2009</div></div>
+          <div class="af"><div class="af-n">70+</div><div class="af-l">International Hits</div></div>
+          <div class="af"><div class="af-n">2101</div><div class="af-l">Records Founded</div></div>
+        </div>
+
+        <h2>A Discography That Spans the World</h2>
+        <p>RedOne's production credits read like a who's who of global pop royalty. Beyond Lady Gaga, he produced landmark records for <strong>Jennifer Lopez</strong> (On The Floor), <strong>Enrique Iglesias</strong> (I Like It), <strong>Pitbull</strong>, <strong>Nicki Minaj</strong> (Starships), <strong>One Direction</strong>, <strong>Usher</strong>, and dozens more. In 2012, he was named <strong>BMI Songwriter of the Year</strong> and <strong>Billboard's Producer of the Year</strong>.</p>
+        <p>In 2010, he founded <strong>2101 Records</strong> with Universal Music Group. He also established the <strong>2101 Foundation</strong> — a non-profit empowering disadvantaged youth through music, arts, and education. <strong>King Mohammed VI of Morocco</strong> personally awarded him the prestigious <strong>Royal Award for Intellectual Excellence</strong> in 2011 — the Kingdom's highest cultural honor.</p>
+
+        <h2>The Song That Made a Stadium Cry</h2>
+        <p>For all his commercial achievements, one moment stands as the most deeply personal chapter of RedOne's story. Despite worldwide fame, he never forgot the football club he had loved as a boy: <strong>Real Madrid</strong>.</p>
+        <p>In 2010, somewhere between Madrid and Morocco at 30,000 feet, a melody came to him mid-flight. He recorded it immediately. It was the seed of what would become the most beloved anthem in modern Spanish football. When Real Madrid president <strong>Florentino Pérez</strong> commissioned a song to celebrate the club's 10th UEFA Champions League title — <em>La Décima</em> — there was only one call to make.</p>
+        <p>Released on May 25, 2014, following Real Madrid's triumph over Atlético Madrid in Lisbon, <strong>"Hala Madrid… y nada más"</strong> immediately topped the Spanish music charts. The entire squad — Cristiano Ronaldo, Sergio Ramos, Karim Benzema, and manager Carlo Ancelotti — appeared in the music video. The song now rings around the Santiago Bernabéu every time Real Madrid scores.</p>
+
+        <div class="art-quote">"When I'm at the stadium and hear the song, I burst into tears. It's very emotional. I know what I'm doing — I've written many songs — but the Madrid crowd is something completely different." — RedOne</div>
+
+        <p>The lyrics, written by journalist <strong>Manuel Jabois</strong>, are a declaration of devotion — a hymn to history, legacy, and the will to win. For RedOne, it was a childhood dream fulfilled. In 2024, president Pérez commissioned him again — a new anthem titled <em>El Madridismo</em> — cementing a bond between the Moroccan producer and football's greatest club that transcends any single trophy.</p>
+
+        <h2>Football and Music: A Natural Partnership</h2>
+        <p>In 2006 RedOne produced "Bamboo" for the FIFA World Cup. In 2018 he co-produced the Russia World Cup anthem. In 2021 he was appointed <strong>FIFA's Creative Entertainment Executive</strong>. For the 2022 Qatar World Cup he produced two official anthems. He composed <em>Dirou Niya</em> as a tribute to Moroccan football fans during their historic Atlas Lions campaign.</p>
+
+        <h2>The Spirit Behind RedoneSports</h2>
+        <p>The story of RedOne is the story that defines everything RedoneSports stands for. A man born in Tétouan with nothing but talent and conviction — who through relentless work, unshakeable belief, and a global mindset became one of the most celebrated creative forces of his generation. He didn't just produce music. He built a legacy that touched sport, culture, royalty, and hundreds of millions of lives around the world.</p>
+        <p>At RedoneSports, we carry that same philosophy into football. We do not simply manage players. We identify extraordinary people, protect their talent, amplify their voice, and build careers and brands worthy of the names they carry. We believe in legacies — not just contracts. We believe in people — not just performances.</p>
+        <p>Because some stories don't end when the final whistle blows. The best ones are only just getting started.</p>
+
+        <div style="margin-top:36px"><p style="font-size:.78rem;color:var(--g);margin-bottom:12px">Tags:</p><span class="art-tag">RedOne</span><span class="art-tag">Nadir Khayat</span><span class="art-tag">Real Madrid Anthem</span><span class="art-tag">Hala Madrid y nada más</span><span class="art-tag">Grammy Award Winner</span><span class="art-tag">Lady Gaga Producer</span><span class="art-tag">FIFA Music Producer</span><span class="art-tag">Moroccan Music</span><span class="art-tag">Tétouan Morocco</span><span class="art-tag">Football and Music</span></div>
+      </div>
+    </article>
+  </div></div>
+
+  <div class="cband"><div class="con" style="position:relative;z-index:1"><h2>INSPIRED BY<br>EXCELLENCE</h2><p>Join an agency built to create legends.</p><button class="btn-w" onclick="goTo('contact')">Work With Us</button></div></div>
+  <footer><div class="fi"><div><div class="fl"><em>REDONE</em>SPORTS</div><p class="ft">We Don't Just Represent Talent. We Build Legacy.</p></div><div><div class="fn"><a onclick="goTo('home')">Home</a><a onclick="goTo('business')">Business</a><a onclick="goTo('brand')">Brand</a><a onclick="goTo('players')">Player Management</a><a onclick="goTo('contact')">Contact</a></div><p class="fc">© 2025 RedoneSports. All rights reserved.</p></div></div></footer>
+</div>
+
+<!-- ═══════════ CONTACT ═══════════ -->
+<div id="pg-contact" class="page">
+  <div class="phero" style="background:var(--k2)">
+    <div class="phi">
+      <span class="stag">Start Your Journey With RedoneSports</span>
+      <h1>CONTACT<br><span>US</span></h1>
+      <div class="div"></div>
+      <p>Whether you are a player seeking elite representation, a club searching for talent, or a brand exploring athlete partnerships — we want to hear from you. Every great legacy begins with a conversation.</p>
+    </div>
+  </div>
+
+  <div class="sec"><div class="con">
+    <div class="cgrid">
+      <div class="revl">
+        <h3 style="font-family:var(--H);font-size:2rem;letter-spacing:1px;margin-bottom:28px">LET'S TALK</h3>
+        <div class="cinfo-label">Email</div><div class="cinfo-val"><a href="mailto:info@redonesports.com">info@redonesports.com</a></div>
+        <div class="cinfo-label">Phone</div><div class="cinfo-val"><a href="tel:+00000000000">+00 000 000 0000</a></div>
+        <div class="cinfo-label">Headquarters</div><div class="cinfo-val">Morocco | Europe | Global</div>
+        <div class="cinfo-label">Working Hours</div><div class="cinfo-val">Monday – Friday: 9:00 AM – 7:00 PM</div>
+        <h4 style="font-family:var(--H);font-size:1.05rem;letter-spacing:2px;margin:36px 0 14px;color:var(--g)">FOLLOW US</h4>
+        <div class="slinks">
+          <div class="sl" title="Instagram">📷</div>
+          <div class="sl" title="X / Twitter">𝕏</div>
+          <div class="sl" title="LinkedIn">💼</div>
+          <div class="sl" title="YouTube">▶</div>
+          <div class="sl" title="TikTok">🎵</div>
+        </div>
+        <div style="margin-top:44px;background:var(--k2);padding:26px;border-left:3px solid var(--red)">
+          <h4 style="font-family:var(--H);font-size:1.2rem;letter-spacing:1px;margin-bottom:10px">RESPONSE TIME</h4>
+          <p style="font-size:.86rem;color:var(--g);line-height:1.75">All inquiries answered within <strong style="color:var(--w)">24–48 business hours</strong>. For urgent matters, please call directly.</p>
+        </div>
+      </div>
+      <div class="cform revr">
+        <h3 style="font-family:var(--H);font-size:1.6rem;letter-spacing:1px;margin-bottom:26px">SEND US A MESSAGE</h3>
+        <div class="frow">
+          <div class="fg"><label>First Name *</label><input type="text" placeholder="Your first name"/></div>
+          <div class="fg"><label>Last Name *</label><input type="text" placeholder="Your last name"/></div>
+        </div>
+        <div class="frow">
+          <div class="fg"><label>Email *</label><input type="email" placeholder="your@email.com"/></div>
+          <div class="fg"><label>Phone</label><input type="tel" placeholder="+00 000 000 000"/></div>
+        </div>
+        <div class="fg"><label>I Am A *</label><select><option value="">Select one...</option><option>Professional Player</option><option>Youth / Academy Player</option><option>Football Club / Scout</option><option>Brand / Sponsor</option><option>Media / Press</option><option>Other</option></select></div>
+        <div class="fg"><label>Service Interested In</label><select><option value="">Select service...</option><option>Player Management</option><option>Brand Building</option><option>Contract Negotiation</option><option>Transfer Management</option><option>Sponsorship & Endorsements</option><option>General Inquiry</option></select></div>
+        <div class="fg"><label>Your Message *</label><textarea placeholder="Tell us about yourself, your goals, and how we can help you build your legacy..."></textarea></div>
+        <button class="fsub" onclick="submitForm(this)">SEND MESSAGE →</button>
+        <p class="fnote">Your information is 100% secure and will never be shared with third parties.</p>
+      </div>
+    </div>
+
+    <!-- CONTACT ARTICLE -->
+    <div style="margin-top:80px;padding-top:80px;border-top:1px solid rgba(255,255,255,.06)">
+      <article class="art-wrap" itemscope itemtype="https://schema.org/Article">
+        <span class="art-cat">📩 How to Get Started</span>
+        <h2 class="art-title">HOW TO CHOOSE THE <span>RIGHT FOOTBALL AGENCY</span> FOR YOUR CAREER</h2>
+        <p class="art-deck">A practical guide for professional and aspiring footballers on what to look for when selecting a player management and brand agency — and the questions every player should ask before signing representation.</p>
+        <div class="art-meta">
+          <span>By <strong>RedoneSports Advisory Team</strong></span>
+          <span>Topic: <strong>Choosing a Football Agent</strong></span>
+          <span>Read: <strong>5 min</strong></span>
+        </div>
+        <div class="art-body" itemprop="articleBody">
+          <h2>Why Your Choice of Agency Defines Your Career</h2>
+          <p>The decision of which football management agency to work with is one of the most important a player will ever make — yet it is often made hastily, based on the first offer received, or through personal connections rather than a careful evaluation of what the agency can genuinely deliver.</p>
+          <p>The right agency is not simply the one that promises the most. It is the one with the network, expertise, and genuine commitment to your specific career goals that will deliver results year after year.</p>
+
+          <h2>Five Questions to Ask Any Football Agency Before Signing</h2>
+          <p><strong>1. What is your actual network in the clubs and leagues I want to reach?</strong> Any agency can claim global connections. Ask for specific examples of transfers and deals completed in the specific leagues and markets that matter to your career. RedoneSports has verified relationships with sporting directors, coaches, and decision-makers across Europe's top five leagues, the major African leagues, and Gulf leagues.</p>
+          <p><strong>2. How do you handle conflicts of interest?</strong> Many agencies simultaneously represent clubs and players — a fundamental conflict of interest that can compromise a player's representation. At RedoneSports, we represent players only, ensuring our interests are always 100% aligned with yours.</p>
+          <p><strong>3. What services do you offer beyond contract negotiation?</strong> A transactional agency that only shows up at negotiating tables provides limited value. Ask about brand management, financial planning, mental health support, relocation assistance, and post-career planning — the full spectrum of services that define elite player management.</p>
+          <p><strong>4. Who specifically will manage my career?</strong> Large agencies often sign players based on the reputation of senior partners, then hand day-to-day management to junior staff. At RedoneSports, every player has a dedicated senior team member responsible for their account from first contact to final contract.</p>
+          <p><strong>5. Can I speak to players you currently represent?</strong> The best proof of an agency's quality is the experience of the players they represent. We actively encourage prospective clients to speak with players we currently manage — because we are confident that our track record speaks for itself.</p>
+
+          <div class="art-quote">"The relationship between a player and their agency should be based on trust, transparency, and shared ambition. If any of those three elements are missing — walk away."</div>
+
+          <h2>Why RedoneSports</h2>
+          <p>At RedoneSports, we bring together everything a professional footballer needs in a single, fully integrated management platform. Our business team handles contracts, transfers, and legal compliance. Our brand team builds commercial identity and secures sponsorship deals. Our management team provides career planning, performance support, and life management. And our story — rooted in the legacy of RedOne, the man who made Real Madrid sing — gives us a cultural credibility and global network that no other agency can match.</p>
+          <p>If you are a professional player, an emerging talent, a club looking for professional representation for your roster, or a brand seeking the right athlete partner — we invite you to start the conversation. Fill out the form above, send us an email, or call our team directly. Every great career and every great partnership begins with a single conversation.</p>
+
+          <div style="margin-top:32px"><p style="font-size:.78rem;color:var(--g);margin-bottom:12px">Related topics:</p><span class="art-tag">How to Choose a Football Agent</span><span class="art-tag">Football Management Agency</span><span class="art-tag">Soccer Player Representation</span><span class="art-tag">Best Sports Agencies</span><span class="art-tag">Professional Football Career</span><span class="art-tag">Athlete Representation</span></div>
+        </div>
+      </article>
+    </div>
+  </div></div>
+  <footer><div class="fi"><div><div class="fl"><em>REDONE</em>SPORTS</div><p class="ft">We Don't Just Represent Talent. We Build Legacy.</p></div><div><div class="fn"><a onclick="goTo('home')">Home</a><a onclick="goTo('business')">Business</a><a onclick="goTo('brand')">Brand</a><a onclick="goTo('players')">Player Management</a><a onclick="goTo('about')">About Us</a></div><p class="fc">© 2025 RedoneSports. All rights reserved.</p></div></div></footer>
+</div>
+
+<script>
+// SEO meta per page
+const SEO={
+  home:{t:'RedoneSports – Elite Football Player Management & Brand Agency',d:'RedoneSports is a premier football player management and brand agency. We develop careers, build athlete brands, and create legacies that outlast the sport.'},
+  business:{t:'Football Business Management & Contract Negotiation – RedoneSports',d:'Expert football contract negotiation, transfer management, financial planning and legal advisory for professional soccer players. RedoneSports Business Services.'},
+  brand:{t:'Athlete Brand Building & Football Sponsorship Agency – RedoneSports',d:'We build powerful personal brands for professional footballers. Sponsorship deals, social media management, media relations and global brand strategy. RedoneSports.'},
+  players:{t:'Professional Football Player Management & Representation – RedoneSports',d:'Complete football player management: career planning, scouting, mental coaching, relocation support, performance management and post-career planning. RedoneSports.'},
+  about:{t:'About RedoneSports – Inspired by RedOne, the Man Who Made Madrid Sing',d:'Discover the story behind RedoneSports and the legacy of RedOne — the Grammy-winning Moroccan music producer who composed Real Madrid\'s iconic anthem Hala Madrid.'},
+  contact:{t:'Contact RedoneSports – Start Your Football Legacy Today',d:'Get in touch with RedoneSports for player representation, brand management, contract negotiation or partnership inquiries. We respond within 24 hours.'}
+};
+
+// INTRO
+let it=setTimeout(closeIntro,3800);
+function closeIntro(){clearTimeout(it);document.getElementById('intro').classList.add('out')}
+
+// NAV SCROLL
+window.addEventListener('scroll',()=>{document.getElementById('nb').classList.toggle('solid',scrollY>80)});
+
+// NAVIGATION
+function goTo(p){
+  document.querySelectorAll('.page').forEach(x=>x.classList.remove('show'));
+  const pg=document.getElementById('pg-'+p);
+  if(pg)pg.classList.add('show');
+  window.scrollTo({top:0,behavior:'smooth'});
+  document.querySelectorAll('.nav-links a').forEach(a=>a.classList.toggle('act',a.dataset.p===p));
+  // Update SEO meta
+  if(SEO[p]){
+    document.getElementById('pg-title').textContent=SEO[p].t;
+    document.getElementById('pg-desc').setAttribute('content',SEO[p].d);
+    document.title=SEO[p].t;
+  }
+  setTimeout(triggerReveal,150);
+}
+function go(p){goTo(p);toggleMenu()}
+
+// MOBILE MENU
+function toggleMenu(){
+  document.getElementById('brg').classList.toggle('open');
+  document.getElementById('mm').classList.toggle('open');
+}
+
+// REVEAL
+function triggerReveal(){
+  document.querySelectorAll('.page.show .rev,.page.show .revl,.page.show .revr').forEach((el,i)=>{
+    setTimeout(()=>el.classList.add('in'),i*65);
+  });
+}
+
+// FORM
+function submitForm(btn){
+  btn.textContent='SENDING...';btn.style.opacity='.7';
+  setTimeout(()=>{
+    btn.textContent='✓ MESSAGE SENT!';btn.style.background='#1a7a1a';btn.style.opacity='1';
+    setTimeout(()=>{btn.textContent='SEND MESSAGE →';btn.style.background='';},3500);
+  },1500);
+}
+
+// INIT
+document.addEventListener('DOMContentLoaded',()=>triggerReveal());
+</script>
+</body>
+</html>
